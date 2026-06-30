@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>پنل مدیریت کافه پرواز</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===================== -->
+<!-- صفحه ورود -->
+<!-- ===================== -->
+<div id="loginBox" style="text-align:center; margin-top:100px;">
+
+    <h2 style="color:#d4af37;">ورود به پنل مدیریت</h2>
+
+    <input type="password" id="password" placeholder="رمز ورود"
+        style="padding:10px; margin-top:20px; border-radius:10px;">
+
+    <br><br>
+
+    <button id="loginBtn">ورود</button>
+
+</div>
+
+
+<!-- ===================== -->
+<!-- پنل مدیریت -->
+<!-- ===================== -->
+<div id="adminPanel" style="display:none; padding:20px;">
+
+    <h1 style="text-align:center; color:#d4af37;">پنل مدیریت کافه پرواز</h1>
+
+    <hr style="margin:20px 0; border:1px solid #d4af37;">
+
+
+    <!-- تغییر لوگو -->
+    <h3>تغییر لوگو</h3>
+    <input type="file" id="logoInput">
+
+
+    <hr style="margin:20px 0; border:1px solid #d4af37;">
+
+
+    <!-- ثبت محصول -->
+    <h3>افزودن محصول</h3>
+
+    <input type="text" id="productName" placeholder="نام محصول"
+        style="display:block; margin:10px 0; padding:10px; width:250px;">
+
+    <input type="number" id="productPrice" placeholder="قیمت محصول"
+        style="display:block; margin:10px 0; padding:10px; width:250px;">
+
+    <input type="file" id="productImage"
+        style="display:block; margin:10px 0;">
+
+    <select id="productCategory"
+        style="display:block; margin:10px 0; padding:10px; width:250px;">
+
+        <option value="hot">نوشیدنی‌های گرم بر پایه قهوه</option>
+        <option value="cold">نوشیدنی‌های سرد بر پایه قهوه</option>
+        <option value="drink">نوشیدنی‌های شرکتی</option>
+        <option value="snack">تنقلات</option>
+        <option value="food">غذای حاضر</option>
+        <option value="other">سایر</option>
+
+    </select>
+
+    <button id="addProduct">ثبت محصول</button>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+  </html>
